@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans:300,400,600,700|Nunito:300,400,600,700">
+    <link rel="stylesheet" href="css/main.css">
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+  rel="stylesheet"
+/>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/custom.js.js"></script>
+    <title>resturanunt </title>
+</head>
+
+<body>
+
+     <nav class="navbar">
+        <input type="checkbox" id="check" class="checkbox" hidden>
+        <div class="hamburger-menu">
+            <label for="check" class="menu">
+                <div class="menu-line menu-line-1"></div>
+                <div class="menu-line menu-line-2"></div>
+                <div class="menu-line menu-line-3"></div>
+            </label>
+        </div>
+
+
+        <div class="navbar-navigation">
+            <div class="navbar-navigation-right">
+                <ul class="nav-list">
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-list-link">خانه</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-list-link">درباره ما</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-list-link">گالری تصایر</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-list-link">منو </a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a href="#" class="nav-list-link">تماس با ما</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <header class="header">
+        <div class="the-navbar">
+            
+            <ul class="the-navbar-list">
+                <li><a href="#">خانه</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#gallery"> گالری تصاویر</a></li>
+                <li><a href="#whoops-menu"> منو</a></li>
+                <li><a href="#" id="tamas-bama"> تماس با ما</a></li>
+                <li><a href="#" class="the-navbar-logo"><img src="images/download.jpg"></a></li>
+            </ul>
+        </div>
+        <div class="brand" id="whoops-menu">
+            <a href="#" class="logo">
+                <i class=" fa fa-utensils"></i>
+            </a>
+            <div>
+                <h1 class="main-name">رستوران حاتم</h1>
+                <p class="sub-name">غذاهای لذیذ ما</p>
+            </div>
+        </div>
+        <div class="header-banner">
+            <h1 class="main-heading">خوش آمدید</h1>
+            <h3 class="sub-heading">غذاهای ما را امتحان کنید</h3>
+            <button type="button" class="main-btn"> سفارش غذا</button>
+        </div>
+
+        <div class="contact-us hidden-display">
+            <div class="close-sign"><a href="#"><i class="fa fa-close" style="font-size:24px"></i></a></div>
+            <div class="contact-us-form">
+                <form action="" class="form-contact">
+                    
+                    <h5 for="">به فرم تماس  رستوران حاتم خوش امدید</h5>
+
+                    <div class="text-form-name">
+                        <label for="" >نام و نام خانوادگی :</label>
+                        <input  type="text" required="required" placeholder="نام شما ...." >
+                    </div>
+
+                    <div class="text-form-emial">
+                        <label for="" >ایمیل:</label>
+                        <input  type="email" required="required" placeholder="ایمیل شما.." >
+                    </div>
+
+                    <div class="text-form-area">
+                        <input  type="text" required="required" placeholder="لطفا پیام خود را بنویسید" >
+                    </div>
+                    <div class="sbt">
+                        <button >ثبت</button>
+
+                    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    
+
+
+        <div class="food-men hidden-display ">
+            <div class="close-sign"><a href="#"><i class="fa fa-close" style="font-size:24px"></i></a></div>
+            <div class="food-men-content">
+               <h4>لیست غذاهای رستوران حاتم</h4><br>
+               <span>جهت سفارش  غذای  مورد نطر خود لفطا روی ان کلیک نمایید</span>
+                     
+               <div class="special-food-container">
+                <div class="name-of-food">
+                    <span>نام غذاها</span>
+                    <ul id="khoshmaze">
+                        <li><a href="#">چلو کباب</a></li>
+                        <li><a href="#">جوجه کباب</a></li>
+                        <li><a href="#">خورشت بادمجان</a></li>
+                        <li><a href="#">خوراک مرغ و قارچ</a></li>
+                        <li><a href="#">ماهی دودی</a></li>
+                        <li><a href="#">زرشک پلو</a></li>
+                        <li><a href="#">میرزا قاسمی</a></li>
+                        <li><a href="#">قورمه سبزی</a></li>
+                        <li><a href="#">اش</a></li>
+                        <li><a href="#">سوپ</a></li>
+
+
+
+                    </ul>
+                </div>
+           
+                <div class="price-of-food">
+                    <span>قیمت </span>
+                    <ul>
+                        <li><a href="#">120000</a></li>
+                        <li><a href="#">130000</a></li>
+                        <li><a href="#">40000</a></li>
+                        <li><a href="#">60000</a></li>
+                        <li><a href="#">30000</a></li>
+                        <li><a href="#">400000</a></li>
+                        <li><a href="#">70000</a></li>
+                        <li><a href="#">60000</a></li>
+                        <li><a href="#">800000</a></li>
+                        <li><a href="#">830000</a></li>
+
+                    </ul><br>
+                    
+                </div>
+                <div class="foodorder"><br><br>
+                    <p></p>
+                 </div>
+        
+            </div>
+        
+        </div>
+
+
+
+
+
+    </header>
+
+    <section class="about-us" >
+        <div class="about-us-left">
+            <img src="images/about-us-img.png" alt="درباره ما">
+        </div>
+        <div class="about-us-right">
+            <h1 class="main-heading">درباره رستوران حاتم</h1>
+            <h3 class="sub-heading">درباره دستپخت سر آشپز</h3>
+            <div class="stars">
+                <i class="fa fa-star-of-life star"></i>
+                <i class="fa fa-star-of-life star"></i>
+                <i class="fa fa-star-of-life star"></i>
+            </div>
+            <p class="description">
+                ابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و وع
+                متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل
+                حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل
+                دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                ر این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل
+                حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل
+                دنیای موجود طراحی اساسا مورد استفاده قرار گیرد
+            </p>
+            <div class="stars">
+                <i class="fa fa-star-of-life star"></i>
+                <i class="fa fa-star-of-life star"></i>
+                <i class="fa fa-star-of-life star"></i>
+            </div>
+            <button type="button" class="more-info">اطلاعات بیشتر</button>
+        </div>
+
+    </section>
+
+
+
+    <section class="gallery" id="gallery">
+        <div class="cards-wrapper">
+            <div class="cards">
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">نام غذا</h1>
+                    <p class="card-overlay-paragraph">قیمت :100000</p>
+                    <button type="button" class="card-overly-btn" id="btnmyass">سفارش دهید</button>
+                </div>
+                <img src="images/gallery-img-1.jpeg" alt="" class="card-img">
+            </div>
+            <div class="cards">
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">نام غذا</h1>
+                    <p class="card-overlay-paragraph">قیمت :100000</p>
+                    <button type="button" class="card-overly-btn" id="btnmyass">سفارش دهید</button>
+                </div>
+                <img src="images/gallery-img-2.jpeg" alt="" class="card-img">
+            </div>
+            <div class="cards">
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">نام غذا</h1>
+                    <p class="card-overlay-paragraph">قیمت :100000</p>
+                    <button type="button" class="card-overly-btn" id="btnmyass">سفارش دهید</button>
+                </div>
+                <img src="images/gallery-img-3.jpeg" alt="" class="card-img">
+            </div>
+
+            <div class="cards">
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">نام غذا</h1>
+                    <p class="card-overlay-paragraph">قیمت :100000</p>
+                    <button type="button" class="card-overly-btn" id="btnmyass">سفارش دهید</button>
+                </div>
+                <img src="images/gallery-img-4.jpeg" alt="" class="card-img">
+            </div>
+
+            <div class="cards">
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">نام غذا</h1>
+                    <p class="card-overlay-paragraph">قیمت :100000</p>
+                    <button type="button" class="card-overly-btn" id="btnmyass">سفارش دهید</button>
+                </div>
+                <img src="images/gallery-img-5.jpeg" alt="" class="card-img">
+            </div>
+
+            <div class="cards">
+                <div class="card-overlay">
+                    <h1 class="card-overlay-heading">نام غذا</h1>
+                    <p class="card-overlay-paragraph">قیمت :100000</p>
+                    <button type="button" class="card-overly-btn" id="btnmyass">سفارش دهید</button>
+                </div>
+                <img src="images/gallery-img-6.jpeg" alt="" class="card-img">
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-header">
+            <a href="#" class="logo">
+                <i class="fa fa-utensils"></i>
+            </a>
+            <div>
+                <h1 class="main-foot">رستوران من</h1>
+                <P class="sub-foot">غذاهای لذیذ ما</P>
+            </div>
+        </div>
+        <div class="footer-social-media">
+
+            <ul class="footer-social-media">
+                <li class="social-media-item">
+                    <a class="social-media-link">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+      
+                <li class="social-media-item">
+                    <a class="social-media-link">
+                        <i class="fab fa-google-plus-square"></i>
+                    </a>
+                </li>
+        
+      
+                <li class="social-media-item">
+                    <a class="social-media-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+         
+                <li class="social-media-item">
+                    <a class="social-media-link">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="footer-copyright">
+            <p class="footer-copyright-paragraph">
+                &copy; تمامی حقوق کپی رایت این سایت متعلق به کامران خاتمی می باشد.
+            </p>
+        </div>
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
